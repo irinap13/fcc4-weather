@@ -24,7 +24,7 @@ h2
 	font-weight: 700
 
 h4
-	color: #FF3F57
+	color: #000
 
 #icon .icon
 	display: none
@@ -45,9 +45,10 @@ h4
 	width: 3.6875em
 	height: 3.6875em
 	margin: -1.84375em
-	background: #fff
+	background: #666
+	color: #666
 	border-radius: 50%
-	box-shadow: -2.1875em 0.6875em 0 -0.6875em, 2.0625em 0.9375em 0 -0.9375em, 0 0 0 0.375em #333, -2.1875em 0.6875em 0 -0.3125em #333, 2.0625em 0.9375em 0 -0.5625em #333
+	box-shadow: -2.1875em 0.6875em 0 -0.6875em, 2.0625em 0.9375em 0 -0.9375em, 0 0 0 0.375em #666, -2.1875em 0.6875em 0 -0.3125em #666, 2.0625em 0.9375em 0 -0.5625em #666
 
 .cloud:after
 	content: ''
@@ -57,19 +58,19 @@ h4
 	display: block
 	width: 4.5625em
 	height: 1em
-	background: #fff
-	box-shadow: 0 0.4375em 0 -0.0625em #333
+	background: #666
+	box-shadow: 0 0.4375em 0 -0.0625em #666
 
 .cloud:nth-child(2)
 	z-index: 0
-	background: #333
-	box-shadow: -2.1875em 0.6875em 0 -0.6875em #333, 2.0625em 0.9375em 0 -0.9375em #333, 0 0 0 0.375em #333, -2.1875em 0.6875em 0 -0.3125em #333, 2.0625em 0.9375em 0 -0.5625em #333
+	background: #666
+	box-shadow: -2.1875em 0.6875em 0 -0.6875em #666, 2.0625em 0.9375em 0 -0.9375em #666, 0 0 0 0.375em #666, -2.1875em 0.6875em 0 -0.3125em #666, 2.0625em 0.9375em 0 -0.5625em #666
 	opacity: 0.3
 	transform: scale(0.5) translate(6em, -3em)
 	animation: cloud 4s linear infinite
 
 .cloud:nth-child(2):after
-	background: #333 
+	background: #666 
 
 .sun
 	position: absolute
@@ -78,9 +79,9 @@ h4
 	width: 2.5em
 	height: 2.5em
 	margin: -1.25em
-	background: #fff
+	background: transparent
 	border-radius: 50%
-	box-shadow: 0 0 0 0.375em #333
+	box-shadow: 0 0 0 0.375em yellow
 	animation: spin 12s infinite linear
 
 .rays
@@ -91,9 +92,9 @@ h4
 	width: 0.375em
 	height: 1.125em
 	margin-left: -0.1875em
-	background: #333
+	background: yellow
 	border-radius: 0.25em
-	box-shadow: 0 5.375em #333
+	box-shadow: 0 5.375em yellow
 
 .rays:before,
 .rays:after
@@ -106,9 +107,9 @@ h4
 	height: 1.125em
 	transform: rotate(60deg)
 	transform-origin: 50% 3.25em
-	background: #333
+	background: yellow
 	border-radius: 0.25em
-	box-shadow: 0 5.375em #333
+	box-shadow: 0 5.375em yellow
 
 .rays:before
 	transform: rotate(120deg)
@@ -126,7 +127,7 @@ h4
 	width: 3.75em
 	height: 3.75em
 	margin: 0.375em 0 0 -2em
-	background: #fff
+	background: transparent
 
 .rain:after
 	content: ''
@@ -148,7 +149,7 @@ h4
 	top: 50%
 	left: 50%
 	margin: -0.25em 0 0 -0.125em
-	color: #333
+	color: yellow
 	opacity: 0.3
 	animation: lightning 2s linear infinite
 
@@ -203,7 +204,7 @@ h4
 	top: 50%
 	left: 50%
 	margin: -1.025em 0 0 -1.0125em
-	color: #333
+	color: #666
 	list-height: 1em
 	opacity: 0.2
 	animation: spin 8s linear infinite reverse
@@ -258,16 +259,16 @@ h4
 	
 @keyframes lightning
 	45%
-		color: #333
-		background: #333
+		color: yellow
+		background: yellow
 		opacity: 0.2
 	
 	50%
-		color: #eee
-		background: #eee
+		color: #ff6666
+		background: #ff6666
 		opacity: 1
 	
 	55%
-		color: #333
-		background: #333
+		color: yellow
+		background: yellow
 		opacity: 0.2
